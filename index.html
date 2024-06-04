@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">Student Portal</div>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search">
+            <button onclick="searchStudent()">Search</button>
+        </div>
+        <div class="buttons">
+            <button onclick="sortTable('name', 'asc')">Sort A→Z</button>
+            <button onclick="sortTable('name', 'desc')">Sort Z→A</button>
+            <button onclick="sortTable('marks', 'asc')">Sort By Marks</button>
+            <button onclick="sortTable('passing', 'desc')">Sort By Passing</button>
+            <button onclick="sortTable('class', 'asc')">Sort By Class</button>
+            <button onclick="sortTable('gender', 'asc')">Sort By Gender</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                <!-- Table rows will be generated here -->
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
